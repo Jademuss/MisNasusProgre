@@ -1,0 +1,17 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+nav, button 
+{
+    min-height: 48px;
+    min-width: 48px;
+}

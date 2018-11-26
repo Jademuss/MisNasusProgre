@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    padding-top: 100px;
+    background-color: rgba(173, 120, 64, 0.322);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor-formulario
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D8CDB8;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.22);
+    margin: 10px;
+	justify-content: center;
+}
+
+
+form
+{
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    background:rgba(186, 152, 128, 0.836);
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.22);
+    padding: 10px;
+    margin: 10px;
+}
+
+.butons
+{
+    width: 90px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+.item-input
+{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    margin: 1px;
+    align-items: center;
+}
+
+.item-input-boton
+{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:500px)
+{
+    form
+	{
+        width:50%;
+    }
+}

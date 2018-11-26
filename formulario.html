@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mis Nasus</title>
+        <link rel="icon" href="'img/iconoperro.png">        
+        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/formulario.css">
+        
+        <link href="https://file.myfontastic.com/BCwNLSewuX3SRWpNHcCZnR/icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="menu-container">
+            <a id="ref" href="index.html"><span class="icon-paw"></span></a>
+            <label id="btn-menu" class="icon-bars"></label>
+            <nav id="navegador">
+                <ul>
+                    <li><a href="index.html" class="item-link">Inicio</a></li>
+                    <li><a href="formulario.html" class="item-link">Adopcion</a></li>
+                    <li><a href="lista_lomitos.html" class="item-link">Conoce un lomito</a></li>  
+                       
+                    
+                    
+                </ul>
+            </nav>
+        </div>  
+
+        <div class="contenedor-formulario">
+            <form onsubmit="return validate();">
+                <h1>Inscripción:</h1>
+                <div class="item-input">
+                    <label for="txtEmail">Correo:</label>
+                    <input type="email" id="txtEmail" placeholder="Ingrese su correo" required/>
+                </div>
+                <div class="item-input">
+                    <label for="txtPassword">Contraseña:</label>
+                    <input type="password" id="txtPassword" placeholder="Ingrese una contraseña" required/>
+                </div>
+                <div class="item-input">   
+                    <label for="txtrut" >Rut:</label>
+                    <input type="text" id="txtrut" onkeyup="modifytext()" maxlength="10" placeholder="Ingrese su rut" required>
+                </div>
+                <div class="item-input">
+                    <label for="txtName">Nombres:</label>
+                    <input type="text" id="txtName" placeholder="Ingrese nombre" required>
+                    <span></span>
+                </div>
+                <div class="item-input">
+                    <label for="txtdate">Fecha:</label>
+                    <input type="date" id="txtdate" value="2001-01-01"  min="2001-01-01 " required>
+                </div>
+                <div class="item-input">  
+                    <label for="txtPhone">Telefono:</label>
+                    <input type="tel" id="txtPhone" minlength="0" maxlength="9" placeholder="(9)12345678" required>
+                </div>
+                <div class="item-input">  
+                    <label for="txtRegion">Seleccione region: </label>
+                    <select id="txtRegion" oninput="selectCity()" required>
+                    </select>
+                </div>    
+                <div class="item-input">
+                    <label for="txtCity">Ciudad</label>
+                    <select id="txtCity">
+                    </select>
+                </div>
+               
+                <div class="item-input">
+                    <label for="sel-vivienda">Tipo vivienda:</label>
+                    <select id="sel-vivienda">
+                        <option>Casa con patio grande</option>  
+                        <option>Casa con patio pequeño</option>
+                        <option>Casa sin patio</option>
+                        <option>Departamento</option>
+                        <option>Otro</option>
+
+                    </select>
+                </div>
+                <div class="item-input-boton">
+                    <button type="submit" class="butons">Registrar</button>
+                        
+                </div>
+            </form>
+        </div>
+        <script src="js/javamenu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
